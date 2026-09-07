@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Scholar</title>
+<meta name="description" content="Scholar's privacy policy: what data the app stores, where it's stored, how the website uses cookies including for advertising, and your choices.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">N</div>
+      <div class="brand-name">Scholar</div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog/index.html">Guides</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="app/" class="nav-cta">Try Scholar App</a>
+    <button class="nav-menu-btn" id="navMenuBtn" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="tab sage">Legal</span>
+    <h1>Privacy Policy</h1>
+  </div>
+</header>
+
+<section style="padding-top:12px;">
+  <div class="wrap">
+    <div class="content">
+      <p class="updated">Last updated: September 2026</p>
+
+      <p>This policy covers two related but separate things: the Scholar <strong>app</strong> (the tool you use to track attendance, timetables, and tasks) and the Scholar <strong>website</strong> (the pages you're reading right now, including our guides). They handle data differently, so we've kept the two sections separate below.</p>
+
+      <h2>Part 1 — The Scholar App</h2>
+
+      <h3>Data storage: on your device, not our servers</h3>
+      <p>Scholar is built to store your information locally on your own device using your browser's or app's local storage. This includes your attendance records, timetable, tasks, diary entries, and any files you add. We do not operate a server that receives, stores, or has access to this information. We cannot see your attendance percentage, your tasks, or your diary entries, because they never leave your device.</p>
+
+      <h3>Optional AI features</h3>
+      <p>Certain features (the Jarvis assistant and model-paper tools) use Google's Gemini API to work. These features require you to provide your own Gemini API key, which is stored locally on your device and used only to make requests directly from your device to Google's Gemini API. We do not receive, log, or store your API key or the content of your requests to Gemini. Your use of Gemini is subject to Google's own privacy terms for that service.</p>
+
+      <h3>Microphone access (voice features)</h3>
+      <p>If you use Scholar's voice features, your device's microphone is accessed using your browser's built-in speech recognition, only while you are actively using that feature, and only with your permission. Voice audio is processed by your browser's speech recognition service (not by us) and is not stored by Scholar.</p>
+
+      <h3>What this means for you</h3>
+      <ul>
+        <li>Uninstalling the app or clearing your browser's site data removes your Scholar data — we don't hold a backup, because we never had a copy.</li>
+        <li>If you use Scholar on a shared or public device, remember that your data is stored on that device.</li>
+        <li>We cannot recover lost data, since we have no copy of it.</li>
+      </ul>
+
+      <h2>Part 2 — This Website</h2>
+
+      <h3>Cookies and advertising</h3>
+      <p>This website may display advertisements served by Google, including through Google AdSense. Google and its partners use cookies to serve ads based on a user's prior visits to this and other websites. Google's use of advertising cookies enables it and its partners to serve ads to our visitors based on their visit to this site and/or other sites on the internet.</p>
+      <p>You may opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google's Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a>.</p>
+
+      <h3>Analytics</h3>
+      <p>We may use standard web analytics tools to understand aggregate traffic to this website — for example, which pages are visited and roughly how many people visit. This data is anonymized and aggregated; it is not linked to your use of the Scholar app.</p>
+
+      <h3>Contact form</h3>
+      <p>If you use the contact form on this website, the information you submit (name, email, and message) is sent directly to our email address so we can respond to you. We don't add you to a mailing list or share this information with third parties.</p>
+
+      <h3>Children's privacy</h3>
+      <p>Scholar is intended for college-level students and is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, we'll update the date at the top of this page. Significant changes will be noted here.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy can be sent through our <a href="contact.html">contact page</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-col" style="max-width:280px;">
+      <div class="brand" style="margin-bottom:14px;">
+        <div class="brand-mark">N</div>
+        <div class="brand-name">Scholar</div>
+      </div>
+      <p style="font-size:13.5px;">A student companion for attendance, timetables, and the daily admin of college life.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Site</h4>
+      <a href="index.html">Home</a>
+      <a href="blog/index.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-col">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Scholar. All rights reserved.</span>
+    <span>Made for students, by a student.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navMenuBtn').addEventListener('click', ()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+</script>
+</body>
+</html>
