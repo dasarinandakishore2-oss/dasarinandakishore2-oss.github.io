@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#F2F4FA">
-<link rel="manifest" href="manifest.json">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Scholar — free student app for attendance tracking, timetable, tasks and study timer. Built for college students in India.">
 <link rel="icon" href="icon-192.png">
-<link rel="apple-touch-icon" href="icon-192.png">
-<title>Scholar</title>
+<title>Scholar App — Attendance & Timetable Tracker</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9191711114254320" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -34,9 +30,9 @@
     --glow-gold:0 10px 24px -10px rgba(224,138,30,.35);
   }
   *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
-  html,body{margin:0;padding:0;height:100%;width:100%;background:var(--bg);color:var(--text);
-    font-family:'Inter',system-ui,sans-serif; overscroll-behavior:none; overflow:hidden;}
-  body{position:fixed;inset:0;
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;}
+  body{
     background:
       radial-gradient(560px 380px at 10% -8%, rgba(124,92,255,.10), transparent 60%),
       radial-gradient(520px 360px at 108% 4%, rgba(255,79,163,.09), transparent 55%),
@@ -44,10 +40,7 @@
       var(--bg);
     background-attachment:fixed;}
   h1,h2,h3,.disp{font-family:'Sora',system-ui,sans-serif;}
-  #app{max-width:480px;margin:0 auto;height:100%;display:flex;flex-direction:column;position:relative;
-    padding-top:env(safe-area-inset-top); padding-bottom:env(safe-area-inset-bottom);
-    padding-left:env(safe-area-inset-left); padding-right:env(safe-area-inset-right);
-    overflow:hidden;}
+  #app{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;position:relative;}
   ::selection{background:rgba(124,92,255,.25);}
   button,.btn,.nav-box,.box7,.files-link,.quick-sq,.attend-btn,.day-tab,.folder-box,.cal-cell,.file-box,.stat-box{
     -webkit-tap-highlight-color:transparent; transition:transform .12s ease, box-shadow .18s ease, opacity .18s ease, background .18s ease, border-color .18s ease;}
@@ -69,7 +62,10 @@
   header.top .brand span{background:var(--grad-gold); -webkit-background-clip:text; background-clip:text; color:transparent;}
   header.top .sub{color:var(--muted);font-size:13px;margin-top:3px;font-weight:500;}
 
-  main{flex:1;padding:8px 16px 96px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  main{flex:1;padding:8px 16px 160px;}
+  /* Ad strip */
+  .ad-strip{text-align:center;padding:8px 16px;background:rgba(242,244,250,.95);border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:68px;}
+  .ad-strip .ad-lbl{font-size:9px;color:#aaa;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;}
   .page{display:none;animation:fade .25s ease;}
   .page.active{display:block;}
   @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
@@ -431,6 +427,17 @@
   </div>
 </div>
 <div id="app">
+  <!-- Ad Strip Top -->
+  <div class="ad-strip">
+    <div class="ad-lbl">Advertisement</div>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:320px;height:50px"
+         data-ad-client="ca-pub-9191711114254320"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
 <div id="reportTemplate" style="position:fixed;left:-10000px;top:0;width:800px;background:#ffffff;font-family:'Work Sans',Arial,sans-serif;color:#1a1a1a;">
   <div style="position:relative;border-bottom:3px solid #8B1E1E;">
@@ -2309,7 +2316,7 @@ document.addEventListener('click', function once(){
 
 /* ---------- Service worker (offline support) ---------- */
 if('serviceWorker' in navigator){
-  window.addEventListener('load', ()=> navigator.serviceWorker.register('sw.js').catch(()=>{}));
+  // Service worker removed — normal webpage mode
 }
 
 /* ---------- PDF Viewer ---------- */
