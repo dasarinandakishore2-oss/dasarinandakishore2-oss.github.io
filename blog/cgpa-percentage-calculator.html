@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA to Percentage Calculator for JNTU Students (with Formula) — Scholar</title>
+<meta name="description" content="Convert your JNTU CGPA to percentage instantly. Includes the official JNTU formula, examples for all CGPA values, and how to calculate your equivalent percentage for job applications.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://myscholar.me/blog/cgpa-percentage-calculator.html">
+<meta property="og:title" content="CGPA to Percentage Calculator for JNTU — Scholar Guides">
+<meta property="og:description" content="Convert JNTU CGPA to percentage with the official formula. Instant results for any CGPA value.">
+<meta property="og:url" content="https://myscholar.me/blog/cgpa-percentage-calculator.html">
+<meta property="og:type" content="article">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"CGPA to Percentage Calculator for JNTU Students (with Formula)","description":"Convert your JNTU CGPA to percentage instantly — official formula, examples, and job application guidance.","author":{"@type":"Organization","name":"Scholar"},"publisher":{"@type":"Organization","name":"Scholar","url":"https://myscholar.me"},"url":"https://myscholar.me/blog/cgpa-percentage-calculator.html","dateModified":"2026-09-12"}
+</script>
+<link rel="stylesheet" href="../style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9191711114254320" crossorigin="anonymous"></script>
+<style>
+.ad-unit{min-height:90px;background:transparent;text-align:center;margin:32px auto;max-width:728px;}
+.ad-label{font-size:11px;color:#9aa3c7;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;}
+.calc-box{background:#f0f2ff;border:2px solid #7C5CFF;border-radius:16px;padding:28px;margin:24px 0;text-align:center;}
+.calc-box input{font-size:24px;width:120px;padding:10px 16px;border:2px solid #7C5CFF;border-radius:10px;text-align:center;font-family:'Sora',sans-serif;outline:none;}
+.calc-box .result{font-size:32px;font-weight:700;color:#7C5CFF;font-family:'Sora',sans-serif;margin-top:16px;}
+.calc-box .result-label{font-size:13px;color:#84889C;margin-top:4px;}
+.table-wrap{overflow-x:auto;margin:20px 0;}
+table{width:100%;border-collapse:collapse;font-size:14px;}
+th{background:#1B1D2C;color:#fff;padding:10px 14px;text-align:left;}
+td{padding:10px 14px;border-bottom:1px solid #e6e8f2;}
+tr:nth-child(even) td{background:#f6f7fc;}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="brand"><div class="brand-mark">N</div><div class="brand-name">Scholar</div></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li><li><a href="index.html" class="active">Guides</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <a href="../app/" class="nav-cta">Try Scholar App</a>
+    <button class="nav-menu-btn" id="navMenuBtn" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</nav>
+<header class="article-hero">
+  <div class="wrap">
+    <span class="tab indigo">CGPA</span>
+    <h1 style="max-width:24ch;">CGPA to Percentage Calculator for JNTU Students (with Formula)</h1>
+    <p class="article-meta">5 min read · Guides · <a href="index.html">Back to all guides</a></p>
+  </div>
+</header>
+<div class="wrap">
+  <div class="ad-unit"><div class="ad-label">Advertisement</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9191711114254320" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+<section style="padding-top:0;">
+  <div class="wrap"><div class="article-body">
+    <p>When you apply for jobs, internships, or higher education, most applications ask for a percentage — but your marksheet shows a CGPA. Here's the formula and a live calculator to convert instantly.</p>
+
+    <h2>JNTU CGPA to Percentage Formula</h2>
+    <p style="font-family:'Fraunces',serif;font-size:20px;font-weight:600;text-align:center;padding:16px;background:#f0f2ff;border-radius:12px;">Percentage = (CGPA − 0.75) × 10</p>
+    <p>This is the official formula used by JNTU Hyderabad for converting CGPA to equivalent percentage for the purpose of job applications and further studies.</p>
+
+    <h2>Live Calculator</h2>
+    <div class="calc-box">
+      <div style="font-size:14px;color:#84889C;margin-bottom:12px;">Enter your CGPA (out of 10)</div>
+      <input type="number" id="cgpaInput" min="0" max="10" step="0.01" placeholder="e.g. 7.5" oninput="calcPct()">
+      <div class="result" id="resultPct">—</div>
+      <div class="result-label">Equivalent Percentage</div>
+    </div>
+
+    <h2>Quick Reference Table</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>CGPA</th><th>Percentage</th><th>Class</th></tr>
+        <tr><td>9.0 – 10.0</td><td>82.5% – 92.5%</td><td>Outstanding</td></tr>
+        <tr><td>8.0 – 8.9</td><td>72.5% – 81.5%</td><td>Distinction</td></tr>
+        <tr><td>7.0 – 7.9</td><td>62.5% – 71.5%</td><td>First Class</td></tr>
+        <tr><td>6.0 – 6.9</td><td>52.5% – 61.5%</td><td>Second Class</td></tr>
+        <tr><td>5.0 – 5.9</td><td>42.5% – 51.5%</td><td>Pass</td></tr>
+      </table>
+    </div>
+  </div></div>
+</section>
+<div class="wrap">
+  <div class="ad-unit"><div class="ad-label">Advertisement</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9191711114254320" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+<section style="padding-top:0;">
+  <div class="wrap"><div class="article-body">
+    <h2>How to use this for job applications</h2>
+    <p>Most companies accept either format — CGPA or percentage — as long as you specify which scale it's on. When filling application forms:</p>
+    <ul>
+      <li>If they ask for percentage: use the formula above and write "X% (converted from CGPA Y.Y on JNTU 10-point scale)"</li>
+      <li>If they ask for CGPA: write your CGPA directly</li>
+      <li>Never round up — write the exact figure your transcript shows</li>
+    </ul>
+    <p>For campus placements, HR teams are familiar with JNTU's grading system and will typically do the conversion themselves. For off-campus applications, it helps to include the formula or a note so there's no confusion.</p>
+
+    <h2>Does CGPA or percentage matter more for placements?</h2>
+    <p>Most companies that recruit from engineering colleges set cutoffs in terms of CGPA — commonly 6.5 or 7.0 on a 10-point scale. Some older companies and PSUs still specify percentage cutoffs (60% or 65%). Either way, the number on your transcript is the one that matters — the conversion is just for communication on forms.</p>
+
+    <div class="byline">
+      <div class="byline-avatar">N</div>
+      <div><b>The Scholar team</b><span>Track your attendance while you work on that CGPA — Scholar keeps both in view.</span></div>
+    </div>
+    <p><a href="../app/">Try Scholar free →</a></p>
+    <h2>More guides</h2>
+    <ul>
+      <li><a href="attendance-percentage-guide.html">How to Calculate Your Attendance Percentage</a></li>
+      <li><a href="jntu-exam-preparation.html">How to Prepare for JNTU Exams</a></li>
+      <li><a href="leave-letter-college.html">How to Write a Leave Letter to College</a></li>
+    </ul>
+  </div></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-col" style="max-width:280px;"><div class="brand" style="margin-bottom:14px;"><div class="brand-mark">N</div><div class="brand-name">Scholar</div></div><p style="font-size:13.5px;">A student companion for attendance, timetables, and the daily admin of college life.</p></div>
+    <div class="foot-col"><h4>Site</h4><a href="../index.html">Home</a><a href="index.html">Guides</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div>
+    <div class="foot-col"><h4>Follow Us</h4><a href="https://youtube.com/@myscholar1" target="_blank" rel="noopener">▶ YouTube</a></div>
+    <div class="foot-col"><h4>Legal</h4><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Service</a></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© 2026 Scholar. All rights reserved.</span><span>Made for students, by a student.</span></div>
+</footer>
+<script>
+function calcPct(){
+  const v = parseFloat(document.getElementById('cgpaInput').value);
+  const el = document.getElementById('resultPct');
+  if(isNaN(v)||v<0||v>10){el.textContent='—';return;}
+  el.textContent = ((v-0.75)*10).toFixed(2) + '%';
+}
+document.getElementById('navMenuBtn').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open');});
+</script>
+</body>
+</html>
