@@ -11,9 +11,9 @@
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <title>Scholar</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9191711114254320" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
   :root{
     --bg:#F2F4FA;
@@ -70,7 +70,7 @@
   header.top .brand span{background:var(--grad-gold); -webkit-background-clip:text; background-clip:text; color:transparent;}
   header.top .sub{color:var(--muted);font-size:13px;margin-top:3px;font-weight:500;}
 
-  main{flex:1;padding:8px 16px 96px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  main{flex:1;padding:8px 16px 160px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
   .page{display:none;animation:fade .25s ease;}
   .page.active{display:block;}
   @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
@@ -118,6 +118,13 @@
   .bar-track{height:9px;background:var(--card2);border-radius:8px;margin-top:10px;overflow:hidden;box-shadow:inset 0 0 0 1px var(--line);}
   .bar-fill{height:100%;background:var(--grad-mint);border-radius:8px;transition:width .5s cubic-bezier(.4,0,.2,1);}
 
+  /* Ad banner strip above bottom nav */
+  .pwa-ad-strip{position:fixed;left:0;right:0;bottom:calc(70px + env(safe-area-inset-bottom));
+    max-width:480px;margin:0 auto;z-index:49;
+    background:rgba(242,244,250,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);text-align:center;min-height:60px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .pwa-ad-strip .ad-label{font-size:9px;color:#aaa;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;}
   .nav-grid{position:fixed;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;
     display:grid;grid-template-columns:repeat(5,1fr);
     background:rgba(255,255,255,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
@@ -414,11 +421,11 @@
     <div style="text-align:center;margin-bottom:18px;">
       <img src="icon-192.png" style="width:56px;height:56px;border-radius:14px;margin-bottom:12px;">
       <h2 style="margin:0 0 4px;font-family:'Sora',sans-serif;">Welcome to Scholar</h2>
-      <div style="color:var(--muted);font-size:13px;">Tell us a bit about yourself — this appears on your downloaded reports.-And also scholar app is of ,for,by RGUKT students -Install the app clicking by above  three dot button install and create a short cut and you install the app -AKindly request by a team team of RGUKTIANS</div>
+      <div style="color:var(--muted);font-size:13px;">Tell us a bit about yourself — this appears on your downloaded reports.</div>
     </div>
     <div class="tt-row">
       <div class="plabel">Full name</div>
-      <input type="text" id="onboardName" placeholder="e.g.Nanda kishore">
+      <input type="text" id="onboardName" placeholder="e.g. K. Sai Teja">
     </div>
     <div class="tt-row">
       <div class="plabel">Campus</div>
@@ -426,7 +433,7 @@
     </div>
     <div class="tt-row">
       <div class="plabel">Student ID</div>
-      <input type="text" id="onboardId" placeholder="e.g. N250001">
+      <input type="text" id="onboardId" placeholder="e.g. N200XXX">
     </div>
     <div class="btn" id="onboardSaveBtn" style="margin-top:6px;">Get Started</div>
   </div>
@@ -521,6 +528,18 @@
           <div class="hb-title">Holiday</div>
           <div class="hb-sub">Enjoy your holiday.<br>Focus on your goals, not on your phone.</div>
         </div>
+      </div>
+
+      <!-- Ad Unit 2: Home page mid-content -->
+      <div style="margin:0 0 14px;text-align:center;min-height:60px;background:rgba(242,244,250,.7);border-radius:14px;border:1px solid var(--line);padding:6px 4px;">
+        <div style="font-size:9px;color:#aaa;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;">Advertisement</div>
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:50px"
+             data-ad-client="ca-pub-9191711114254320"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
 
       <div class="card progress-card">
@@ -1032,6 +1051,17 @@
 
   </main>
 
+  <!-- AdSense Banner Strip above bottom nav -->
+  <div class="pwa-ad-strip" id="pwaAdStrip">
+    <div class="ad-label">Advertisement</div>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:320px;height:50px"
+         data-ad-client="ca-pub-9191711114254320"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
   <nav class="nav-grid">
     <div class="nav-box active" data-page="home"><div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg></div>Home</div>
     <div class="nav-box" data-page="progress"><div class="ico"><svg class="i" viewBox="0 0 24 24"><path d="M4 20V10"/><path d="M12 20V4"/><path d="M20 20v-7"/></svg></div>Progress</div>
@@ -1041,6 +1071,7 @@
   </nav>
 
   <div class="toast" id="toast"></div>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <div class="img-viewer" id="imgViewer">
     <div class="iv-close" id="ivClose"><svg class="i" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></div>
